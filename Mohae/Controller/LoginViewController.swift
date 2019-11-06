@@ -31,7 +31,8 @@ class LoginViewController: UIViewController {
         
         mainLogo.text = "MoHAE?"
         let attributedStr = NSMutableAttributedString(string: mainLogo.text!)
-        attributedStr.addAttribute(.foregroundColor, value: UIColor.blue, range: (mainLogo.text! as NSString).range(of: "HAE?"))
+        attributedStr.addAttribute(.foregroundColor, value: UIColor.systemPink
+            , range: (mainLogo.text! as NSString).range(of: "HAE?"))
         attributedStr.addAttribute(.foregroundColor, value: UIColor.lightGray, range: (mainLogo.text! as NSString).range(of: "Mo"))
         
         mainLogo.attributedText = attributedStr
@@ -140,38 +141,7 @@ class LoginViewController: UIViewController {
 
   }
     
-    func kakaoLogin(_ sender: Any) {
-        //이전 카카오톡 세션 열려있으면 닫기
-        guard let session = KOSession.shared() else {
-            return
-        }
-        if session.isOpen() {
-            session.close()
-        }
-        session.open(completionHandler: { (error) -> Void in
-            if error == nil {
-                if session.isOpen() {
-                    //accessToken
-                    print(session.token?.accessToken)
-                } else {
-                    print("Login failed")
-                }
-            } else {
-                print("Login error : \(String(describing: error))")
-            }
-            if !session.isOpen() {
-                if let error = error as NSError? {
-                    switch error.code {
-                    case Int(KOErrorCancelled.rawValue):
-                        break
-                    default:
-                        //간편 로그인 취소
-                        print("error : \(error.description)")
-                    }
-                }
-            }
-        })
-    }
+
     
   //카카오 로그인시 구현되는 
   @objc private func touchUpLoginButton(_ sender: UIButton) {
@@ -180,24 +150,26 @@ class LoginViewController: UIViewController {
     }
     
     if session.isOpen() {
-      //session.close()
+      session.close()
     }
     
     session.open { (error) in
       if error != nil || !session.isOpen() { return }
       KOSessionTask.userMeTask(completion: { (error, user) in
-        guard let user = user,
-              let email = user.account?.email,
-              let nickname = user.nickname else { return }
+//        guard let user = user,
+//              let email = user.account?.email,
+//              let nickname = user.nickname else { return }
         
-        let mainVC = MainViewController()
-        mainVC.emailLabel.text = email
-        mainVC.nicnameLabel.text = nickname
+        let mainVC = SurveyViewController()
+        //mainVC.emailLabel.text = email
+        //mainVC.nicnameLabel.text = nickname
         
-        self.present(mainVC, animated: false, completion: nil)
+        self.present(mainVC, animated: true, completion: nil)
       })
     }
   }
+    
+    
     @objc func movesign(_ sender: UIButton) {
         let next:SignInViewController = SignInViewController()
         
@@ -210,12 +182,10 @@ class LoginViewController: UIViewController {
                     if user != nil{
                         print("login success")
                         if let user = Auth.auth().currentUser {
-                            let mainVC = MainViewController()
+                           
                             
-                            
-                            //mainVC.emailLabel.text = email
-                            //mainVC.nicnameLabel.text = nickname
-                            self.present(mainVC, animated: true, completion: nil)
+
+                            self.present(SurveyViewController(), animated: true, completion: nil)
 
 
                                 }

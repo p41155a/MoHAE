@@ -11,18 +11,6 @@ import UIKit
 
 class MainViewController: UIViewController {
   
-  let emailLabel: UILabel = {
-    let label = UILabel()
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
-  
-  let nicnameLabel: UILabel = {
-    let label = UILabel()
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
-    //
 
   
   private let logoutButton: UIButton = {
@@ -54,7 +42,7 @@ class MainViewController: UIViewController {
         print("logout success.")
         self.dismiss(animated: true, completion: nil)
       } else {
-        print(error?.localizedDescription)
+       
       }
     }
   }
@@ -68,16 +56,10 @@ class MainViewController: UIViewController {
   
   private func layout() {
     let guide = view.safeAreaLayoutGuide
-    view.addSubview(emailLabel)
-    emailLabel.topAnchor.constraint(equalTo: guide.topAnchor, constant: 30).isActive = true
-    emailLabel.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
-    
-    view.addSubview(nicnameLabel)
-    nicnameLabel.topAnchor.constraint(equalTo: emailLabel.bottomAnchor, constant: 30).isActive = true
-    nicnameLabel.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+
     
     view.addSubview(logoutButton)
-    logoutButton.topAnchor.constraint(equalTo: nicnameLabel.bottomAnchor, constant: 30).isActive = true
+    logoutButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 30).isActive = true
     logoutButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
     
     view.addSubview(goSurveyButton)

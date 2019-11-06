@@ -122,6 +122,7 @@ class SignInViewController: UIViewController {
         
         self.present(next, animated: true, completion: nil)
         
+        
 
         // 회원정보 데이터 저장
         let memRef = Database.database().reference().child("members").setValue([
@@ -131,24 +132,56 @@ class SignInViewController: UIViewController {
         
         ])
 
+        
          
 
     }
     
     @objc func signSuccess(_ sender: Any) {
-        Auth.auth().createUser(withEmail: signemailField.text!, password: signpasswordField.text!
+        
+        Auth.auth().createUser(withEmail: signemailField.text!, password: signpasswordField.text!) { (authResult, error) in
+        if authResult != nil {
+            //upload profile image
+            // let storageRef = Storage.storage().reference().child("profile_images").child("\(imageName).png")
+            //profile image로 사용할 때 두 가지 크기의 이미지로 저장할 수 있도록 한다.
 
-                ) { (user, error) in
-
-                    if user !=  nil{
-                        print("register success")
-                        self.successAlert()
-                    }
-                    else{
-                        print("register failed")
-                    }
-                }
+                            if let email = self.signemailField.text {
+                                if let name = self.signnameField.text {
+                                    if let phone = self.signphoneField.text {
+                                    let values = ["email" : email, "name" : name, "phone" : phone] as [String : AnyObject]
+                                    let ref = Database.database().reference()
+                                    let reference = ref.child("users").child((authResult?.user.uid)!)
+                                    reference.updateChildValues(values)
+                                }
+                            }
+                       
+                    
+               
             }
+            
+            //Move to Login View
+           let next:SurveyViewController = SurveyViewController()
+            
+           self.present(next, animated: true, completion: nil)
+        }
+        }
+    }
+        
+        
+        
+        
+//        Auth.auth().createUser(withEmail: signemailField.text!, password: signpasswordField.text!
+//
+//                ) { (user, error) in
+//
+//                    if user !=  nil{
+//                        print("register success")
+//                        self.successAlert()
+//                    }
+//                    else{
+//                        print("register failed")
+//                    }
+//                }}
 
     
     

@@ -20,15 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
-        let user = Auth.auth().currentUser;
-
-        if ((user) != nil) {
-            
-          // User is signed in.
-        } else {
-          // No user is signed in.
-        }
- 
+        
         let loginVC = LoginViewController()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = loginVC
@@ -39,19 +31,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-      if KOSession.isKakaoAccountLoginCallback(url.absoluteURL) {
-        return KOSession.handleOpen(url)
-      }
-      
-      return true
-    }
-    
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-      if KOSession.isKakaoAccountLoginCallback(url.absoluteURL) {
-        return KOSession.handleOpen(url)
-      }
-      return true
+       if KOSession.handleOpen(url) {
+          return true
+       }
+          return false
+    }
+    internal func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+       if KOSession.handleOpen(url) {
+          return true
+       }
+          return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

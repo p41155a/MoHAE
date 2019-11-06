@@ -10,16 +10,8 @@ import UIKit
 
 class MainSurveyCell: UICollectionViewCell {
     
-    let checkView: UIView = {
-        let cv = UIView()
-        cv.translatesAutoresizingMaskIntoConstraints = false
-        let buttonArray = ["그렇지 않음","그렇지 않은 편","보통","그런 편","그렇다"]
-        for buttonName in buttonArray{
-            let checkbutton = UIButton()
-            checkbutton.setTitle(buttonName, for:. normal)
-        }
-        return cv
-    }()
+    var button = [UIButton(),UIButton(),UIButton(),UIButton(),UIButton()]
+    let buttonArray = ["그렇지않음","그렇지않은편","보통","그런편","그렇다"]
     
     let textView: UITextView = {
         let tv = UITextView()
@@ -31,14 +23,6 @@ class MainSurveyCell: UICollectionViewCell {
         return tv
     }()
     
-    let checkSeg: UISegmentedControl = {
-        let cs = UISegmentedControl(items: ["그렇지 않음", "그렇지 않은 편", "보통", "그런 편", "그렇다"])
-        cs.translatesAutoresizingMaskIntoConstraints = false
-        cs.selectedSegmentIndex = 0
-        
-        return cs
-    }()
-    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -47,6 +31,17 @@ class MainSurveyCell: UICollectionViewCell {
         super.init(frame: frame)
         
         addSubview(textView)
+        
+        
+        for i in 0 ... 4 {
+            button[i] = UIButton(type: .system)
+            button[i].layer.borderColor = UIColor.gray.cgColor
+            button[i].layer.borderWidth = 1
+            button[i].layer.cornerRadius = 3
+            button[i].tintColor = UIColor.darkGray
+            addSubview(button[i])
+            button[i].setTitle(buttonArray[i], for: .normal)
+        }
         
         textView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true
         textView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true

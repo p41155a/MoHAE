@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E57EAE649761EA8EC501E4A /* Pods_Mohae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1389490B80B37D0A593DE0D /* Pods_Mohae.framework */; };
+		787351972371C149004D1C51 /* BeforeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787351962371C149004D1C51 /* BeforeTestViewController.swift */; };
 		78F44783236AA4300041ABC5 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F44782236AA4300041ABC5 /* KakaoOpenSDK.framework */; };
 		78F44785236AA67B0041ABC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F44784236AA67B0041ABC5 /* LoginViewController.swift */; };
 		78F44787236AA6820041ABC5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F44786236AA6820041ABC5 /* MainViewController.swift */; };
@@ -135,6 +136,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		787351962371C149004D1C51 /* BeforeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeTestViewController.swift; sourceTree = "<group>"; };
 		78F44771236AA3FF0041ABC5 /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		78F44782236AA4300041ABC5 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		78F44784236AA67B0041ABC5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				AFB3515223431F6F00CB304A /* SurveyViewController.swift */,
 				AFB351BD2349CA3A00CB304A /* AnalysisController.swift */,
 				78F44788236B3C630041ABC5 /* SignInViewController.swift */,
+				787351962371C149004D1C51 /* BeforeTestViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 				AFB3515323431F6F00CB304A /* SurveyViewController.swift in Sources */,
 				AFB351AC2349C73100CB304A /* MainSurveyCell.swift in Sources */,
 				AFB351862344C6AE00CB304A /* MainSurvey.swift in Sources */,
+				787351972371C149004D1C51 /* BeforeTestViewController.swift in Sources */,
 				78F44789236B3C630041ABC5 /* SignInViewController.swift in Sources */,
 				BC8D4A7022F9635B007C7F67 /* AppDelegate.swift in Sources */,
 				AFB351BE2349CA3A00CB304A /* AnalysisController.swift in Sources */,
