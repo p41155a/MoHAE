@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E57EAE649761EA8EC501E4A /* Pods_Mohae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1389490B80B37D0A593DE0D /* Pods_Mohae.framework */; };
 		787351972371C149004D1C51 /* BeforeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787351962371C149004D1C51 /* BeforeTestViewController.swift */; };
+		787351D82372A62B004D1C51 /* mohaeMain.png in Resources */ = {isa = PBXBuildFile; fileRef = 787351C42372A62B004D1C51 /* mohaeMain.png */; };
+		787351D92372A62B004D1C51 /* mohaeSub.png in Resources */ = {isa = PBXBuildFile; fileRef = 787351C52372A62B004D1C51 /* mohaeSub.png */; };
 		78F44783236AA4300041ABC5 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F44782236AA4300041ABC5 /* KakaoOpenSDK.framework */; };
 		78F44785236AA67B0041ABC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F44784236AA67B0041ABC5 /* LoginViewController.swift */; };
 		78F44787236AA6820041ABC5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F44786236AA6820041ABC5 /* MainViewController.swift */; };
@@ -137,6 +139,8 @@
 
 /* Begin PBXFileReference section */
 		787351962371C149004D1C51 /* BeforeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeTestViewController.swift; sourceTree = "<group>"; };
+		787351C42372A62B004D1C51 /* mohaeMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mohaeMain.png; sourceTree = "<group>"; };
+		787351C52372A62B004D1C51 /* mohaeSub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mohaeSub.png; sourceTree = "<group>"; };
 		78F44771236AA3FF0041ABC5 /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		78F44782236AA4300041ABC5 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		78F44784236AA67B0041ABC5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +214,15 @@
 				C1389490B80B37D0A593DE0D /* Pods_Mohae.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		787351C32372A62B004D1C51 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				787351C42372A62B004D1C51 /* mohaeMain.png */,
+				787351C52372A62B004D1C51 /* mohaeSub.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		AFB3515423431F8F00CB304A /* Controller */ = {
@@ -297,6 +310,7 @@
 				BC8D4A7622F9635D007C7F67 /* Assets.xcassets */,
 				BC8D4A7822F9635D007C7F67 /* LaunchScreen.storyboard */,
 				BC8D4A7B22F9635D007C7F67 /* Info.plist */,
+				787351C32372A62B004D1C51 /* Resource */,
 			);
 			path = Mohae;
 			sourceTree = "<group>";
@@ -525,10 +539,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				787351D82372A62B004D1C51 /* mohaeMain.png in Resources */,
 				BC8D4A7A22F9635D007C7F67 /* LaunchScreen.storyboard in Resources */,
 				AFB351C0234B12D600CB304A /* GoogleService-Info.plist in Resources */,
 				BC8D4A7722F9635D007C7F67 /* Assets.xcassets in Resources */,
 				BC8D4A7522F9635B007C7F67 /* Main.storyboard in Resources */,
+				787351D92372A62B004D1C51 /* mohaeSub.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
