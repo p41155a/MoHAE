@@ -35,17 +35,6 @@ class SurveyViewController: UIViewController {
         return cv
     }()
     
-    let sendButton: UIButton = {
-        let btn = UIButton(type: .system)
-        btn.setTitle("완료", for: .normal)
-        btn.tintColor = .white
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.addTarget(self, action: #selector(complete), for: .touchUpInside)
-        
-        
-        return btn
-    }()
-    
     // 타이틀뷰 설정
     let titleView: UIView = {
         /*
@@ -89,6 +78,16 @@ class SurveyViewController: UIViewController {
     }
     
     func setView() {
+        let sendButton: UIButton = {
+            let btn = UIButton(type: .system)
+            btn.setTitle("완료", for: .normal)
+            btn.backgroundColor = .systemPink
+            btn.tintColor = .white
+            btn.translatesAutoresizingMaskIntoConstraints = false
+            btn.addTarget(self, action: #selector(complete), for: .touchUpInside)
+            return btn
+        }()
+        
         view.addSubview(collectionView)
         view.addSubview(sendButton)
         
@@ -99,12 +98,17 @@ class SurveyViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: sendButton.topAnchor).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo:  sendButton.topAnchor).isActive = true
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         
         sendButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         sendButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -20).isActive = true
+        
+        sendButton.snp.makeConstraints { (make) in
+            make.width.equalTo(view.frame.width)
+            make.height.equalTo(40)
+        }
         
         navigationController?.navigationBar.barTintColor = UIColor.systemTeal
         navigationItem.titleView = titleView

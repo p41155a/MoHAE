@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E57EAE649761EA8EC501E4A /* Pods_Mohae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1389490B80B37D0A593DE0D /* Pods_Mohae.framework */; };
 		787351972371C149004D1C51 /* BeforeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787351962371C149004D1C51 /* BeforeTestViewController.swift */; };
 		787351D82372A62B004D1C51 /* mohaeMain.png in Resources */ = {isa = PBXBuildFile; fileRef = 787351C42372A62B004D1C51 /* mohaeMain.png */; };
 		787351D92372A62B004D1C51 /* mohaeSub.png in Resources */ = {isa = PBXBuildFile; fileRef = 787351C52372A62B004D1C51 /* mohaeSub.png */; };
@@ -15,6 +14,7 @@
 		78F44785236AA67B0041ABC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F44784236AA67B0041ABC5 /* LoginViewController.swift */; };
 		78F44787236AA6820041ABC5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F44786236AA6820041ABC5 /* MainViewController.swift */; };
 		78F44789236B3C630041ABC5 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F44788236B3C630041ABC5 /* SignInViewController.swift */; };
+		A527DB44EDB79A3EED86A3A8 /* Pods_Mohae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F3AE096F6A246117D5EA4F /* Pods_Mohae.framework */; };
 		AFB3515323431F6F00CB304A /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3515223431F6F00CB304A /* SurveyViewController.swift */; };
 		AFB351862344C6AE00CB304A /* MainSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB351852344C6AE00CB304A /* MainSurvey.swift */; };
 		AFB351AC2349C73100CB304A /* MainSurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB351AB2349C73100CB304A /* MainSurveyCell.swift */; };
@@ -27,6 +27,39 @@
 		BC8D4A7A22F9635D007C7F67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8D4A7822F9635D007C7F67 /* LaunchScreen.storyboard */; };
 		BC8D4A8522F9635D007C7F67 /* MohaeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D4A8422F9635D007C7F67 /* MohaeTests.swift */; };
 		BC8D4A9022F9635D007C7F67 /* MohaeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D4A8F22F9635D007C7F67 /* MohaeUITests.swift */; };
+		FF0F875D2373D23C00E8B25C /* AgreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87372373D23B00E8B25C /* AgreeViewController.swift */; };
+		FF0F875E2373D23C00E8B25C /* DataAnalysisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87522373D23B00E8B25C /* DataAnalysisController.swift */; };
+		FF0F875F2373D23C00E8B25C /* MoneyQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87532373D23B00E8B25C /* MoneyQuestionController.swift */; };
+		FF0F87602373D23C00E8B25C /* RecommendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87542373D23B00E8B25C /* RecommendingController.swift */; };
+		FF0F87612373D23C00E8B25C /* CoupleQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87552373D23B00E8B25C /* CoupleQuestionController.swift */; };
+		FF0F87622373D23C00E8B25C /* AnalysisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87562373D23B00E8B25C /* AnalysisController.swift */; };
+		FF0F87632373D23C00E8B25C /* PeopleQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87572373D23B00E8B25C /* PeopleQuestionController.swift */; };
+		FF0F87642373D23C00E8B25C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87582373D23B00E8B25C /* MapViewController.swift */; };
+		FF0F87652373D23C00E8B25C /* TestSurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87592373D23B00E8B25C /* TestSurveyController.swift */; };
+		FF0F87662373D23C00E8B25C /* FeelingQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F875A2373D23C00E8B25C /* FeelingQuestionController.swift */; };
+		FF0F87672373D23C00E8B25C /* WeatherQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F875B2373D23C00E8B25C /* WeatherQuestionController.swift */; };
+		FF0F87682373D23C00E8B25C /* RecommendButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F875C2373D23C00E8B25C /* RecommendButtonController.swift */; };
+		FF0F87712373D24C00E8B25C /* PeopleQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87692373D24C00E8B25C /* PeopleQuestionView.swift */; };
+		FF0F87722373D24C00E8B25C /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F876A2373D24C00E8B25C /* LoadingCell.swift */; };
+		FF0F87732373D24C00E8B25C /* SubSurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F876B2373D24C00E8B25C /* SubSurveyCell.swift */; };
+		FF0F87742373D24C00E8B25C /* CoupleQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F876C2373D24C00E8B25C /* CoupleQuestionView.swift */; };
+		FF0F87752373D24C00E8B25C /* MapSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F876D2373D24C00E8B25C /* MapSearchCell.swift */; };
+		FF0F87762373D24C00E8B25C /* FeelingQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F876E2373D24C00E8B25C /* FeelingQuestionView.swift */; };
+		FF0F87772373D24C00E8B25C /* WeatherQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F876F2373D24C00E8B25C /* WeatherQuestionView.swift */; };
+		FF0F87782373D24C00E8B25C /* MoneyQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87702373D24C00E8B25C /* MoneyQuestionView.swift */; };
+		FF0F87852373D25B00E8B25C /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87792373D25A00E8B25C /* Personality.swift */; };
+		FF0F87862373D25B00E8B25C /* NumberOfPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F877A2373D25A00E8B25C /* NumberOfPeople.swift */; };
+		FF0F87872373D25B00E8B25C /* Feeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F877B2373D25A00E8B25C /* Feeling.swift */; };
+		FF0F87882373D25B00E8B25C /* MapSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F877C2373D25A00E8B25C /* MapSearch.swift */; };
+		FF0F87892373D25B00E8B25C /* Couple.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F877D2373D25B00E8B25C /* Couple.swift */; };
+		FF0F878A2373D25B00E8B25C /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F877E2373D25B00E8B25C /* Time.swift */; };
+		FF0F878B2373D25B00E8B25C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F877F2373D25B00E8B25C /* User.swift */; };
+		FF0F878C2373D25B00E8B25C /* DataForAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87802373D25B00E8B25C /* DataForAnalysis.swift */; };
+		FF0F878D2373D25B00E8B25C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87812373D25B00E8B25C /* Weather.swift */; };
+		FF0F878E2373D25B00E8B25C /* SubSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87822373D25B00E8B25C /* SubSurvey.swift */; };
+		FF0F878F2373D25B00E8B25C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87832373D25B00E8B25C /* Category.swift */; };
+		FF0F87902373D25B00E8B25C /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87842373D25B00E8B25C /* Money.swift */; };
+		FF0F87922373D2B400E8B25C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87912373D2B400E8B25C /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,9 +168,25 @@
 			remoteGlobalIDString = BC8D4A6B22F9635B007C7F67;
 			remoteInfo = Mohae;
 		};
+		FF0F874E2373D23B00E8B25C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFB351792344ADDB00CB304A /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D797E9A5C5782CE845840781FA1CC81;
+			remoteInfo = Alamofire;
+		};
+		FF0F87502373D23B00E8B25C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFB351792344ADDB00CB304A /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E23C076BA70925415F490FEDB215DA92;
+			remoteInfo = SwiftyJSON;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046DC642282F3D8BC3911A83 /* Pods-Mohae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mohae.debug.xcconfig"; path = "Target Support Files/Pods-Mohae/Pods-Mohae.debug.xcconfig"; sourceTree = "<group>"; };
+		41F3AE096F6A246117D5EA4F /* Pods_Mohae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mohae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		787351962371C149004D1C51 /* BeforeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeTestViewController.swift; sourceTree = "<group>"; };
 		787351C42372A62B004D1C51 /* mohaeMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mohaeMain.png; sourceTree = "<group>"; };
 		787351C52372A62B004D1C51 /* mohaeSub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mohaeSub.png; sourceTree = "<group>"; };
@@ -146,8 +195,6 @@
 		78F44784236AA67B0041ABC5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78F44786236AA6820041ABC5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		78F44788236B3C630041ABC5 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		9ABE04658614A27B1D5977D9 /* Pods-Mohae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mohae.release.xcconfig"; path = "Target Support Files/Pods-Mohae/Pods-Mohae.release.xcconfig"; sourceTree = "<group>"; };
-		AD55273E82D96CD590FD42F3 /* Pods-Mohae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mohae.debug.xcconfig"; path = "Target Support Files/Pods-Mohae/Pods-Mohae.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB3515223431F6F00CB304A /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		AFB351792344ADDB00CB304A /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		AFB351852344C6AE00CB304A /* MainSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSurvey.swift; sourceTree = "<group>"; };
@@ -167,7 +214,40 @@
 		BC8D4A8B22F9635D007C7F67 /* MohaeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MohaeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8D4A8F22F9635D007C7F67 /* MohaeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MohaeUITests.swift; sourceTree = "<group>"; };
 		BC8D4A9122F9635D007C7F67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1389490B80B37D0A593DE0D /* Pods_Mohae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mohae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1724EE946FDE00B1C566ADB /* Pods-Mohae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mohae.release.xcconfig"; path = "Target Support Files/Pods-Mohae/Pods-Mohae.release.xcconfig"; sourceTree = "<group>"; };
+		FF0F87372373D23B00E8B25C /* AgreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreeViewController.swift; sourceTree = "<group>"; };
+		FF0F87522373D23B00E8B25C /* DataAnalysisController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAnalysisController.swift; sourceTree = "<group>"; };
+		FF0F87532373D23B00E8B25C /* MoneyQuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyQuestionController.swift; sourceTree = "<group>"; };
+		FF0F87542373D23B00E8B25C /* RecommendingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendingController.swift; sourceTree = "<group>"; };
+		FF0F87552373D23B00E8B25C /* CoupleQuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoupleQuestionController.swift; sourceTree = "<group>"; };
+		FF0F87562373D23B00E8B25C /* AnalysisController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalysisController.swift; path = "../../../../../Downloads/MoHae-GHJ_Google/Mohae/Mohae/Controller/AnalysisController.swift"; sourceTree = "<group>"; };
+		FF0F87572373D23B00E8B25C /* PeopleQuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleQuestionController.swift; sourceTree = "<group>"; };
+		FF0F87582373D23B00E8B25C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FF0F87592373D23B00E8B25C /* TestSurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSurveyController.swift; sourceTree = "<group>"; };
+		FF0F875A2373D23C00E8B25C /* FeelingQuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingQuestionController.swift; sourceTree = "<group>"; };
+		FF0F875B2373D23C00E8B25C /* WeatherQuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherQuestionController.swift; sourceTree = "<group>"; };
+		FF0F875C2373D23C00E8B25C /* RecommendButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendButtonController.swift; sourceTree = "<group>"; };
+		FF0F87692373D24C00E8B25C /* PeopleQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleQuestionView.swift; sourceTree = "<group>"; };
+		FF0F876A2373D24C00E8B25C /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		FF0F876B2373D24C00E8B25C /* SubSurveyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubSurveyCell.swift; sourceTree = "<group>"; };
+		FF0F876C2373D24C00E8B25C /* CoupleQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoupleQuestionView.swift; sourceTree = "<group>"; };
+		FF0F876D2373D24C00E8B25C /* MapSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchCell.swift; sourceTree = "<group>"; };
+		FF0F876E2373D24C00E8B25C /* FeelingQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingQuestionView.swift; sourceTree = "<group>"; };
+		FF0F876F2373D24C00E8B25C /* WeatherQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherQuestionView.swift; sourceTree = "<group>"; };
+		FF0F87702373D24C00E8B25C /* MoneyQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyQuestionView.swift; sourceTree = "<group>"; };
+		FF0F87792373D25A00E8B25C /* Personality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
+		FF0F877A2373D25A00E8B25C /* NumberOfPeople.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfPeople.swift; sourceTree = "<group>"; };
+		FF0F877B2373D25A00E8B25C /* Feeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feeling.swift; sourceTree = "<group>"; };
+		FF0F877C2373D25A00E8B25C /* MapSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearch.swift; sourceTree = "<group>"; };
+		FF0F877D2373D25B00E8B25C /* Couple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Couple.swift; sourceTree = "<group>"; };
+		FF0F877E2373D25B00E8B25C /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		FF0F877F2373D25B00E8B25C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF0F87802373D25B00E8B25C /* DataForAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataForAnalysis.swift; sourceTree = "<group>"; };
+		FF0F87812373D25B00E8B25C /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FF0F87822373D25B00E8B25C /* SubSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubSurvey.swift; sourceTree = "<group>"; };
+		FF0F87832373D25B00E8B25C /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FF0F87842373D25B00E8B25C /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		FF0F87912373D2B400E8B25C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +255,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E57EAE649761EA8EC501E4A /* Pods_Mohae.framework in Frameworks */,
 				78F44783236AA4300041ABC5 /* KakaoOpenSDK.framework in Frameworks */,
+				A527DB44EDB79A3EED86A3A8 /* Pods_Mohae.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +280,8 @@
 		359F8EB4E08B0D052B6E2A68 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AD55273E82D96CD590FD42F3 /* Pods-Mohae.debug.xcconfig */,
-				9ABE04658614A27B1D5977D9 /* Pods-Mohae.release.xcconfig */,
+				046DC642282F3D8BC3911A83 /* Pods-Mohae.debug.xcconfig */,
+				F1724EE946FDE00B1C566ADB /* Pods-Mohae.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -211,7 +291,7 @@
 			children = (
 				78F44782236AA4300041ABC5 /* KakaoOpenSDK.framework */,
 				AFB351792344ADDB00CB304A /* Pods.xcodeproj */,
-				C1389490B80B37D0A593DE0D /* Pods_Mohae.framework */,
+				41F3AE096F6A246117D5EA4F /* Pods_Mohae.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,6 +308,18 @@
 		AFB3515423431F8F00CB304A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FF0F87372373D23B00E8B25C /* AgreeViewController.swift */,
+				FF0F87562373D23B00E8B25C /* AnalysisController.swift */,
+				FF0F87552373D23B00E8B25C /* CoupleQuestionController.swift */,
+				FF0F87522373D23B00E8B25C /* DataAnalysisController.swift */,
+				FF0F875A2373D23C00E8B25C /* FeelingQuestionController.swift */,
+				FF0F87582373D23B00E8B25C /* MapViewController.swift */,
+				FF0F87532373D23B00E8B25C /* MoneyQuestionController.swift */,
+				FF0F87572373D23B00E8B25C /* PeopleQuestionController.swift */,
+				FF0F875C2373D23C00E8B25C /* RecommendButtonController.swift */,
+				FF0F87542373D23B00E8B25C /* RecommendingController.swift */,
+				FF0F87592373D23B00E8B25C /* TestSurveyController.swift */,
+				FF0F875B2373D23C00E8B25C /* WeatherQuestionController.swift */,
 				78F44786236AA6820041ABC5 /* MainViewController.swift */,
 				78F44784236AA67B0041ABC5 /* LoginViewController.swift */,
 				AFB3515223431F6F00CB304A /* SurveyViewController.swift */,
@@ -242,6 +334,14 @@
 			isa = PBXGroup;
 			children = (
 				AFB351AB2349C73100CB304A /* MainSurveyCell.swift */,
+				FF0F876C2373D24C00E8B25C /* CoupleQuestionView.swift */,
+				FF0F876E2373D24C00E8B25C /* FeelingQuestionView.swift */,
+				FF0F876A2373D24C00E8B25C /* LoadingCell.swift */,
+				FF0F876D2373D24C00E8B25C /* MapSearchCell.swift */,
+				FF0F87702373D24C00E8B25C /* MoneyQuestionView.swift */,
+				FF0F87692373D24C00E8B25C /* PeopleQuestionView.swift */,
+				FF0F876B2373D24C00E8B25C /* SubSurveyCell.swift */,
+				FF0F876F2373D24C00E8B25C /* WeatherQuestionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +349,7 @@
 		AFB3517A2344ADDB00CB304A /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				FF0F874F2373D23B00E8B25C /* Alamofire.framework */,
 				78F4479E236B503F0041ABC5 /* FirebaseAuth.framework */,
 				AFB351982344C6AF00CB304A /* FirebaseCore.framework */,
 				AFB3519A2344C6AF00CB304A /* FirebaseCoreDiagnostics.framework */,
@@ -262,6 +363,7 @@
 				AFB351A82344C6AF00CB304A /* nanopb.framework */,
 				AFB3517F2344ADDB00CB304A /* Pods_Mohae.framework */,
 				AFB351812344ADDB00CB304A /* SnapKit.framework */,
+				FF0F87512373D23B00E8B25C /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,6 +371,18 @@
 		AFB351822344AE0F00CB304A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF0F87832373D25B00E8B25C /* Category.swift */,
+				FF0F877D2373D25B00E8B25C /* Couple.swift */,
+				FF0F87802373D25B00E8B25C /* DataForAnalysis.swift */,
+				FF0F877B2373D25A00E8B25C /* Feeling.swift */,
+				FF0F877C2373D25A00E8B25C /* MapSearch.swift */,
+				FF0F87842373D25B00E8B25C /* Money.swift */,
+				FF0F877A2373D25A00E8B25C /* NumberOfPeople.swift */,
+				FF0F87792373D25A00E8B25C /* Personality.swift */,
+				FF0F87822373D25B00E8B25C /* SubSurvey.swift */,
+				FF0F877E2373D25B00E8B25C /* Time.swift */,
+				FF0F877F2373D25B00E8B25C /* User.swift */,
+				FF0F87812373D25B00E8B25C /* Weather.swift */,
 				AFB351852344C6AE00CB304A /* MainSurvey.swift */,
 			);
 			path = Model;
@@ -287,6 +401,7 @@
 				41FE5790A7BF4494BD4A3021 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		BC8D4A6D22F9635B007C7F67 /* Products */ = {
 			isa = PBXGroup;
@@ -301,16 +416,17 @@
 		BC8D4A6E22F9635B007C7F67 /* Mohae */ = {
 			isa = PBXGroup;
 			children = (
+				787351C32372A62B004D1C51 /* Resource */,
 				AFB351822344AE0F00CB304A /* Model */,
 				AFB351552343355600CB304A /* View */,
 				AFB3515423431F8F00CB304A /* Controller */,
 				BC8D4A6F22F9635B007C7F67 /* AppDelegate.swift */,
 				BC8D4A7122F9635B007C7F67 /* ViewController.swift */,
+				FF0F87912373D2B400E8B25C /* Extension.swift */,
 				BC8D4A7322F9635B007C7F67 /* Main.storyboard */,
 				BC8D4A7622F9635D007C7F67 /* Assets.xcassets */,
 				BC8D4A7822F9635D007C7F67 /* LaunchScreen.storyboard */,
 				BC8D4A7B22F9635D007C7F67 /* Info.plist */,
-				787351C32372A62B004D1C51 /* Resource */,
 			);
 			path = Mohae;
 			sourceTree = "<group>";
@@ -340,11 +456,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC8D4A9422F9635D007C7F67 /* Build configuration list for PBXNativeTarget "Mohae" */;
 			buildPhases = (
-				D3421842559403B1125F19C8 /* [CP] Check Pods Manifest.lock */,
+				BB5B14E86157C05B113F9381 /* [CP] Check Pods Manifest.lock */,
 				BC8D4A6822F9635B007C7F67 /* Sources */,
 				BC8D4A6922F9635B007C7F67 /* Frameworks */,
 				BC8D4A6A22F9635B007C7F67 /* Resources */,
-				97800F17A50977C607247FCD /* [CP] Embed Pods Frameworks */,
+				9ADC444E2677EDA4CD775381 /* [CP] Embed Pods Frameworks */,
+				072258C11FFADDF8468E1BBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -532,6 +649,20 @@
 			remoteRef = AFB351A72344C6AF00CB304A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		FF0F874F2373D23B00E8B25C /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FF0F874E2373D23B00E8B25C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF0F87512373D23B00E8B25C /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = FF0F87502373D23B00E8B25C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -565,7 +696,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		97800F17A50977C607247FCD /* [CP] Embed Pods Frameworks */ = {
+		072258C11FFADDF8468E1BBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mohae/Pods-Mohae-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mohae/Pods-Mohae-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mohae/Pods-Mohae-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ADC444E2677EDA4CD775381 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -582,7 +730,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mohae/Pods-Mohae-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3421842559403B1125F19C8 /* [CP] Check Pods Manifest.lock */ = {
+		BB5B14E86157C05B113F9381 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -611,16 +759,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0F87662373D23C00E8B25C /* FeelingQuestionController.swift in Sources */,
+				FF0F87782373D24C00E8B25C /* MoneyQuestionView.swift in Sources */,
 				78F44785236AA67B0041ABC5 /* LoginViewController.swift in Sources */,
+				FF0F87682373D23C00E8B25C /* RecommendButtonController.swift in Sources */,
+				FF0F875F2373D23C00E8B25C /* MoneyQuestionController.swift in Sources */,
+				FF0F87892373D25B00E8B25C /* Couple.swift in Sources */,
+				FF0F87772373D24C00E8B25C /* WeatherQuestionView.swift in Sources */,
 				BC8D4A7222F9635B007C7F67 /* ViewController.swift in Sources */,
 				AFB3515323431F6F00CB304A /* SurveyViewController.swift in Sources */,
+				FF0F878F2373D25B00E8B25C /* Category.swift in Sources */,
+				FF0F87852373D25B00E8B25C /* Personality.swift in Sources */,
+				FF0F87742373D24C00E8B25C /* CoupleQuestionView.swift in Sources */,
+				FF0F87712373D24C00E8B25C /* PeopleQuestionView.swift in Sources */,
+				FF0F87752373D24C00E8B25C /* MapSearchCell.swift in Sources */,
+				FF0F87872373D25B00E8B25C /* Feeling.swift in Sources */,
 				AFB351AC2349C73100CB304A /* MainSurveyCell.swift in Sources */,
 				AFB351862344C6AE00CB304A /* MainSurvey.swift in Sources */,
+				FF0F875E2373D23C00E8B25C /* DataAnalysisController.swift in Sources */,
+				FF0F87602373D23C00E8B25C /* RecommendingController.swift in Sources */,
 				787351972371C149004D1C51 /* BeforeTestViewController.swift in Sources */,
+				FF0F87732373D24C00E8B25C /* SubSurveyCell.swift in Sources */,
+				FF0F87862373D25B00E8B25C /* NumberOfPeople.swift in Sources */,
 				78F44789236B3C630041ABC5 /* SignInViewController.swift in Sources */,
+				FF0F87612373D23C00E8B25C /* CoupleQuestionController.swift in Sources */,
+				FF0F878C2373D25B00E8B25C /* DataForAnalysis.swift in Sources */,
+				FF0F878B2373D25B00E8B25C /* User.swift in Sources */,
+				FF0F87762373D24C00E8B25C /* FeelingQuestionView.swift in Sources */,
+				FF0F878E2373D25B00E8B25C /* SubSurvey.swift in Sources */,
+				FF0F878A2373D25B00E8B25C /* Time.swift in Sources */,
+				FF0F87672373D23C00E8B25C /* WeatherQuestionController.swift in Sources */,
+				FF0F87902373D25B00E8B25C /* Money.swift in Sources */,
+				FF0F87622373D23C00E8B25C /* AnalysisController.swift in Sources */,
 				BC8D4A7022F9635B007C7F67 /* AppDelegate.swift in Sources */,
+				FF0F87922373D2B400E8B25C /* Extension.swift in Sources */,
+				FF0F87642373D23C00E8B25C /* MapViewController.swift in Sources */,
+				FF0F87722373D24C00E8B25C /* LoadingCell.swift in Sources */,
+				FF0F87882373D25B00E8B25C /* MapSearch.swift in Sources */,
 				AFB351BE2349CA3A00CB304A /* AnalysisController.swift in Sources */,
+				FF0F878D2373D25B00E8B25C /* Weather.swift in Sources */,
+				FF0F87652373D23C00E8B25C /* TestSurveyController.swift in Sources */,
 				78F44787236AA6820041ABC5 /* MainViewController.swift in Sources */,
+				FF0F87632373D23C00E8B25C /* PeopleQuestionController.swift in Sources */,
+				FF0F875D2373D23C00E8B25C /* AgreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,7 +974,7 @@
 		};
 		BC8D4A9522F9635D007C7F67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD55273E82D96CD590FD42F3 /* Pods-Mohae.debug.xcconfig */;
+			baseConfigurationReference = 046DC642282F3D8BC3911A83 /* Pods-Mohae.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -817,7 +998,7 @@
 		};
 		BC8D4A9622F9635D007C7F67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9ABE04658614A27B1D5977D9 /* Pods-Mohae.release.xcconfig */;
+			baseConfigurationReference = F1724EE946FDE00B1C566ADB /* Pods-Mohae.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

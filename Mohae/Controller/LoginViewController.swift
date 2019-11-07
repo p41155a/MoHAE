@@ -182,13 +182,10 @@ class LoginViewController: UIViewController {
                     if user != nil{
                         print("login success")
                         if let user = Auth.auth().currentUser {
-                           
-                            
-
                             self.present(SurveyViewController(), animated: true, completion: nil)
 
 
-                                }
+                       }
                     }
                     else{
                         print("login fail")
