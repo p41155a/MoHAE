@@ -78,7 +78,7 @@ class LoginViewController: UIViewController {
     func loginButton1Layout() {
         loginButton1.setTitle("Login", for: .normal)
         loginButton1.setTitleColor(.white, for: .normal)
-        loginButton1.backgroundColor = .lightGray
+        loginButton1.backgroundColor = .systemPink
         loginButton1.addTarget(self, action: #selector(moveLogin(_:)), for: .touchUpInside)
         //loginButton1.layer.cornerRadius = 10
         
@@ -94,7 +94,7 @@ class LoginViewController: UIViewController {
     func signInButtonLayout() {
         signInButton.setTitle("Sign In", for: .normal)
         signInButton.setTitleColor(.white, for: .normal)
-        signInButton.backgroundColor = .lightGray
+        signInButton.backgroundColor = .systemPink
         //loginButton1.layer.cornerRadius = 10
         signInButton.addTarget(self, action: #selector(movesign(_:)), for: .touchUpInside)
         signInButton.snp.makeConstraints{ make in
@@ -116,6 +116,16 @@ class LoginViewController: UIViewController {
             make.trailing.equalTo(-70)
             make.top.equalTo(textField.snp.bottom).offset(12)
         }
+    }
+    
+    func errorAlert(){
+        let alert = UIAlertController(title: "로그인 실패", message:"이메일 또는 비밀 번호가 다릅니다", preferredStyle: .alert)
+        let success = UIAlertAction(title: "확인", style: .default) { (action) in
+            //success를 눌렀을 때 MapViewController로 이동하면서 데이터를 전해준다.
+             self.navigationController?.popViewController(animated: true)
+        }
+        alert.addAction(success)
+        self.present(alert, animated: true, completion: nil)
     }
 
     
@@ -181,14 +191,20 @@ class LoginViewController: UIViewController {
 
                     if user != nil{
                         print("login success")
-                        if let user = Auth.auth().currentUser {
-                            self.present(SurveyViewController(), animated: true, completion: nil)
-
-
-                       }
+                    Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).observeSingleEvent(of: .value, with: { (snapshot) in
+                            if let dictionary = snapshot.value as? [String: AnyObject] {
+                                let isinit = dictionary["isinit"] as? Int
+                                if(isinit == 1){
+                                    self.present(RecommendButtonController(), animated: true, completion: nil)
+                                }else{
+                                    self.present(SurveyViewController(), animated: true, completion: nil)
+                                }
+                            }
+                        }, withCancel: nil)
                     }
                     else{
                         print("login fail")
+                        self.errorAlert()
                     }
               }
     }

@@ -148,7 +148,7 @@ class SignInViewController: UIViewController {
                             if let email = self.signemailField.text {
                                 if let name = self.signnameField.text {
                                     if let phone = self.signphoneField.text {
-                                    let values = ["email" : email, "name" : name, "phone" : phone] as [String : AnyObject]
+                                        let values = ["isinit": 0, "email" : email, "name" : name, "phone" : phone] as [String : AnyObject]
                                     let ref = Database.database().reference()
                                     let reference = ref.child("users").child((authResult?.user.uid)!)
                                     reference.updateChildValues(values)

@@ -11,7 +11,7 @@ import Firebase
 
 class AnalysisController: UIViewController {
     
-    var delegate = LoginViewController() // 가고싶은 컨트롤러
+    var delegate = RecommendButtonController() // 가고싶은 컨트롤러
     var data: [String] = []
     var result: [Int] = [0,0,0]
     let logoImage = UIImageView()
@@ -24,7 +24,7 @@ class AnalysisController: UIViewController {
         // 결과 표시 후 이동 버튼
         let sendButton: UIButton = {
             let btn = UIButton(type: .system)
-            btn.setTitle("완료", for: .normal)
+            btn.setTitle("다음", for: .normal)
             btn.tintColor = .white
             btn.backgroundColor = .systemPink
             btn.translatesAutoresizingMaskIntoConstraints = false
@@ -116,10 +116,11 @@ class AnalysisController: UIViewController {
         // 현재 로그인한 사람 가져오기
         let ref = Database.database().reference()
         let idRef = ref.child("users").child((Auth.auth().currentUser?.uid)!)
-        let childUpdate = ["outsider": result[0],"emotional": result[1], "sensory": result[2]]
+        let childUpdate = ["outsider": result[0],"emotional": result[1], "sensory": result[2], "isinit": 1]
         idRef.updateChildValues(childUpdate)
         
-        let navController = UINavigationController(rootViewController: delegate) //네비게이션으로 analysiscontroller로 가자고 하는 화면
+        let navController = UINavigationController(rootViewController: delegate)
+        //네비게이션으로 analysiscontroller로 가자고 하는 화면
         present(navController, animated: true, completion: nil)
     }
     

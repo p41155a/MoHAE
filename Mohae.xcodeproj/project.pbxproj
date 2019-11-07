@@ -32,7 +32,6 @@
 		FF0F875F2373D23C00E8B25C /* MoneyQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87532373D23B00E8B25C /* MoneyQuestionController.swift */; };
 		FF0F87602373D23C00E8B25C /* RecommendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87542373D23B00E8B25C /* RecommendingController.swift */; };
 		FF0F87612373D23C00E8B25C /* CoupleQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87552373D23B00E8B25C /* CoupleQuestionController.swift */; };
-		FF0F87622373D23C00E8B25C /* AnalysisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87562373D23B00E8B25C /* AnalysisController.swift */; };
 		FF0F87632373D23C00E8B25C /* PeopleQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87572373D23B00E8B25C /* PeopleQuestionController.swift */; };
 		FF0F87642373D23C00E8B25C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87582373D23B00E8B25C /* MapViewController.swift */; };
 		FF0F87652373D23C00E8B25C /* TestSurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87592373D23B00E8B25C /* TestSurveyController.swift */; };
@@ -60,6 +59,7 @@
 		FF0F878F2373D25B00E8B25C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87832373D25B00E8B25C /* Category.swift */; };
 		FF0F87902373D25B00E8B25C /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87842373D25B00E8B25C /* Money.swift */; };
 		FF0F87922373D2B400E8B25C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87912373D2B400E8B25C /* Extension.swift */; };
+		FF0F87B02373DBA300E8B25C /* AnalysisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F87AF2373DBA300E8B25C /* AnalysisController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,7 +220,6 @@
 		FF0F87532373D23B00E8B25C /* MoneyQuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyQuestionController.swift; sourceTree = "<group>"; };
 		FF0F87542373D23B00E8B25C /* RecommendingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendingController.swift; sourceTree = "<group>"; };
 		FF0F87552373D23B00E8B25C /* CoupleQuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoupleQuestionController.swift; sourceTree = "<group>"; };
-		FF0F87562373D23B00E8B25C /* AnalysisController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalysisController.swift; path = "../../../../../Downloads/MoHae-GHJ_Google/Mohae/Mohae/Controller/AnalysisController.swift"; sourceTree = "<group>"; };
 		FF0F87572373D23B00E8B25C /* PeopleQuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleQuestionController.swift; sourceTree = "<group>"; };
 		FF0F87582373D23B00E8B25C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FF0F87592373D23B00E8B25C /* TestSurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSurveyController.swift; sourceTree = "<group>"; };
@@ -248,6 +247,7 @@
 		FF0F87832373D25B00E8B25C /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FF0F87842373D25B00E8B25C /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		FF0F87912373D2B400E8B25C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		FF0F87AF2373DBA300E8B25C /* AnalysisController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,8 +308,8 @@
 		AFB3515423431F8F00CB304A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FF0F87AF2373DBA300E8B25C /* AnalysisController.swift */,
 				FF0F87372373D23B00E8B25C /* AgreeViewController.swift */,
-				FF0F87562373D23B00E8B25C /* AnalysisController.swift */,
 				FF0F87552373D23B00E8B25C /* CoupleQuestionController.swift */,
 				FF0F87522373D23B00E8B25C /* DataAnalysisController.swift */,
 				FF0F875A2373D23C00E8B25C /* FeelingQuestionController.swift */,
@@ -777,6 +777,7 @@
 				AFB351AC2349C73100CB304A /* MainSurveyCell.swift in Sources */,
 				AFB351862344C6AE00CB304A /* MainSurvey.swift in Sources */,
 				FF0F875E2373D23C00E8B25C /* DataAnalysisController.swift in Sources */,
+				FF0F87B02373DBA300E8B25C /* AnalysisController.swift in Sources */,
 				FF0F87602373D23C00E8B25C /* RecommendingController.swift in Sources */,
 				787351972371C149004D1C51 /* BeforeTestViewController.swift in Sources */,
 				FF0F87732373D24C00E8B25C /* SubSurveyCell.swift in Sources */,
@@ -790,7 +791,6 @@
 				FF0F878A2373D25B00E8B25C /* Time.swift in Sources */,
 				FF0F87672373D23C00E8B25C /* WeatherQuestionController.swift in Sources */,
 				FF0F87902373D25B00E8B25C /* Money.swift in Sources */,
-				FF0F87622373D23C00E8B25C /* AnalysisController.swift in Sources */,
 				BC8D4A7022F9635B007C7F67 /* AppDelegate.swift in Sources */,
 				FF0F87922373D2B400E8B25C /* Extension.swift in Sources */,
 				FF0F87642373D23C00E8B25C /* MapViewController.swift in Sources */,
